@@ -1,0 +1,40 @@
+Anfrage VSO-2026-000123
+LOGO / Header
+Stand 07.10.2026
+Überflutungsnachweis
+nach DIN 1986-100 · Bemessung der Anlage nach DWA-A 138-1 · Musterobjekt, Musterstraße 1, 79098 Freiburg im
+Breisgau
+✓ Nachweis erfüllt
+Das Rückhaltevolumen passt vollständig in die geplante Anlage. Zusätzliche Überflutungsflächen auf dem Grundstück
+sind nicht erforderlich.
+Erforderliches Rückhaltevolumen Vorhandenes Speichervolumen Auslastung
+11,72 m³ 15,32 m³ 76 %
+0 m³ vorhandenes Speichervolumen = 100 %
+Eckdaten
+Entwässerung Rigole	Regendaten KOSTRA-DWD-2020, Z206 S112
+Produkt EcoBloc Inspect 420	Gewählte Regenhäufigkeit 5 Jahre
+Abmessung L × B × H 8,00 × 2,40 × 0,84 m	Nachweis-Regen 30-jährlich
+Speicherkoeffizient s_R 0,95	Befestigte Fläche A_ges 950 m²
+Regenhäufigkeit ≤ 10 Jahre → 30-jährlicher Regen. Fläche > 800 m²: Nachweis ist nach DIN 1986-100 Pflicht.
+Flächen
+Angeschlossene Fläche Art A [m²] C_s A · C_s [m²]
+Dachflächen (Schrägdach) – Ziegel, Abdichtungsbahnen Dach 600 1,00 600,0
+Teildurchlässige Verkehrsflächen – Betonsteinpflaster, in
+außerh. Geb. 350 0,90 315,0
+Sand verlegt
+Summe MUSTER950 915,0
+Berechnung je Regendauer
+Regendauer D r(D,2) [l/(s·ha)] r(D,30) [l/(s·ha)] Zufluss [m³] Ableitung [m³] V_Rück [m³]
+5 min 255,0 480,0 13,68 7,00 6,68
+10 min 175,0 340,0 19,38 9,61 9,77
+15 min 138,0 270,0 23,09 11,36 11,72
+Maßgebend ist der größte Wert: 11,72 m³ bei D = 15 min.
+Rechenweg
+7
+V_Rück = [ r(D,30) · A_ges − r(D,2) · (A_Dach · C_s,Dach + A_FaG · C_s,FaG) ] · D · 60 / 10 (DIN 1986-100, Gl. 20)
+V_vorh = L · B · H · s_R · Nachweis erfüllt, wenn V_vorh ≥ max V_Rück
+Zusätzliche Überflutungs- bzw. Rückstauflächen auf dem Grundstück wurden nicht angesetzt; das gesamte Rückhaltevolumen muss in der
+Anlage gespeichert werden. Versickerung während des Regenereignisses wurde auf der sicheren Seite nicht berücksichtigt. Die
+Bemessung ersetzt keine Fachplanung; die Genehmigungsfähigkeit ist mit der zuständigen Behörde abzustimmen.
+Bearbeitet von Max Mustermann · 07.10.2026
+Überflutungsnachweis nach DIN 1986-100 · Rückhaltung ausschließlich in der Anlage Seite 1

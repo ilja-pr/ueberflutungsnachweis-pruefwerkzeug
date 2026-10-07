@@ -1,0 +1,13 @@
+/* Ausgabe-Tab */
+.outcols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:start}
+@media (max-width:980px){.outcols{grid-template-columns:minmax(0,1fr)}}
+.outhead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;gap:8px;flex-wrap:wrap}
+.seclist{list-style:none;margin:0 0 14px;padding:0;border-top:1px solid var(--line)}
+.seclist li{display:flex;justify-content:space-between;gap:8px 12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.seclist .check{align-items:flex-start;min-width:0}.seclist .check span{display:flex;flex-direction:column}.seclist small{font-size:12.5px}
+.secactions{display:flex;gap:12px;flex-wrap:wrap}
+.outbuttons{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 4px}
+.preview{width:100%;height:70vh;min-height:420px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.mt{margin-top:24px}
+.seclist li>span:first-child:not(.secactions){display:flex;flex-direction:column;min-width:0}
+.seclist li>span:first-child small{font-size:12.5px}

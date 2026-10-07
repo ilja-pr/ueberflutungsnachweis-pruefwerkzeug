@@ -1,0 +1,20 @@
+/* Textseiten */
+.page{max-width:860px;margin:0 auto}.page.wide{max-width:1200px}.lead{font-size:16px;margin:0 0 20px}
+.panel,.plain-sec{border-top:1px solid var(--line);padding:18px 0 4px;margin-bottom:12px;min-width:0}
+.panel h2,.plain-sec h2{margin-bottom:10px;font-size:17px}.panel p{margin:8px 0}
+.formula{background:var(--soft);border-radius:6px;padding:14px;font-size:16px;margin-bottom:12px;overflow-x:auto;font-family:Georgia,"Times New Roman",serif}
+.plain{margin:0;padding-left:22px}.plain li{margin:6px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media (max-width:640px){.two{grid-template-columns:1fr}}
+.before,.after{border-left:3px solid var(--line);padding:2px 0 2px 12px}.after{border-left-color:var(--accent)}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}@media (max-width:860px){.flow{grid-template-columns:1fr}}
+.flow div{border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-size:13.5px;background:var(--card)}.flow div b{display:block;font-size:14px;margin-bottom:3px}.flow .new{border-color:var(--accent)}
+
+/* Einbauen */
+.steps-overview{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px 16px}
+.steps-overview a{color:var(--ink);text-decoration:none;padding:5px 0;display:flex;gap:10px;align-items:baseline;border-bottom:1px solid var(--line);font-size:14px}
+.steps-overview a span{color:var(--mute);width:14px}.steps-overview a:hover{color:var(--accent)}.steps-overview a.done{color:var(--mute);text-decoration:line-through}
+.stepcard{border-top:1px solid var(--line);padding:18px 0 6px;margin-bottom:10px;scroll-margin-top:100px}
+.stepcard header{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.stepcard h2{font-size:18px}.num-plain{color:var(--mute);font-weight:500;margin-right:6px}
+.goal{margin:4px 0 8px;font-weight:500}.todo ul,.todo ol{margin:6px 0;padding-left:22px}.todo li{margin:4px 0}
+.fertig{margin:10px 0 0;font-size:14px;color:var(--mute)}.fertig b{color:var(--ink)}

@@ -1,0 +1,53 @@
+/* VSO-Import und Prüfung */
+.drop{display:flex;gap:12px;align-items:center;flex-wrap:wrap;border:1.5px dashed var(--line);border-radius:8px;padding:16px;background:var(--soft)}
+.drop.over{border-color:var(--accent);background:var(--card)}
+.dropnote{color:var(--mute);font-size:13px}
+textarea.paste{font:12.5px/1.5 ui-monospace,Menlo,Consolas,monospace;resize:vertical;min-height:110px}
+.loadstate{margin:8px 0 0;font-size:14px}
+
+.strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:14px}
+@media (max-width:720px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stripitem{border:1px solid var(--line);border-left-width:5px;border-radius:6px;padding:8px 10px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;font-size:13px;background:var(--card);min-width:0}
+.stripitem b{font-size:15px}
+.stripitem.vollstaendig{border-left-color:var(--ok)}.stripitem.unvollstaendig{border-left-color:var(--bad)}
+.stripitem.nicht-anwendbar{border-left-color:var(--mute)}.stripitem.unbekannt{border-left-color:var(--warn)}
+
+.eqs{display:flex;flex-direction:column;gap:8px}
+details.eq{border:1px solid var(--line);border-radius:8px;background:var(--card)}
+details.eq>summary{cursor:pointer;list-style:none;display:flex;gap:6px 10px;align-items:baseline;flex-wrap:wrap;padding:10px 14px}
+details.eq>summary::-webkit-details-marker{display:none}
+details.eq>summary::before{content:"+";color:var(--mute);width:12px}details.eq[open]>summary::before{content:"−"}
+.eqtitle{font-weight:650}.eqstatus{color:var(--mute);font-size:13px}
+.eqbody{padding:0 14px 12px 36px}
+.eqformula{margin:0 0 6px;overflow-x:auto}
+.verdict{font-size:12px;font-weight:600;border-radius:99px;padding:1px 9px;border:1px solid}
+.verdict.vollstaendig{color:var(--ok);border-color:var(--ok)}.verdict.unvollstaendig{color:var(--bad);border-color:var(--bad)}
+.verdict.nicht-anwendbar{color:var(--mute);border-color:var(--mute)}.verdict.unbekannt{color:var(--warn);border-color:var(--warn)}
+
+.reqlist{list-style:none;margin:10px 0 0;padding:0}
+.reqrow{display:grid;grid-template-columns:84px minmax(0,1fr);gap:10px;padding:8px 0;border-top:1px solid var(--line)}
+@media (max-width:560px){.reqrow{grid-template-columns:minmax(0,1fr)}}
+.state{font-size:12px;font-weight:600;text-align:center;border-radius:4px;padding:2px 6px;height:fit-content;border:1px solid;white-space:nowrap}
+.state.ok{color:var(--ok);border-color:var(--ok)}.state.missing{color:var(--bad);border-color:var(--bad)}
+.state.partial{color:var(--bad);border-color:var(--bad);border-style:dashed}
+.state.assumed{color:var(--warn);border-color:var(--warn)}.state.blocked{color:var(--mute);border-color:var(--mute)}
+.reqlabel{font-size:14px}.reqdetail{font-size:13.5px;color:var(--mute)}.reqwhere{font-size:12.5px;margin-top:2px}
+
+.fgroup h3{margin:14px 0 6px}
+table.findings td.valcell{min-width:120px}
+table.findings td.valcell input{padding:4px 7px}
+.src{font-size:12px;border:1px solid var(--line);border-radius:4px;padding:0 6px;white-space:nowrap}
+.src.manuell{border-color:var(--accent);color:var(--accent)}
+.conflict{color:var(--warn);font-size:12.5px}
+.uidname{display:block;color:var(--mute);font-size:12px}
+.manual-add{margin-top:16px;border-top:1px solid var(--line);padding-top:10px}
+.manual-add summary{cursor:pointer;color:var(--accent)}
+.manualrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.manualrow select{width:auto;max-width:100%}.manualrow .numwrap{width:170px}
+.manualrow input[type=text]{width:180px}
+.manualbody{margin-top:10px}
+
+.rawtext{max-height:420px;overflow:auto;border:1px solid var(--line);border-radius:6px;font:12.5px/1.5 ui-monospace,Menlo,Consolas,monospace;background:var(--card);margin-bottom:6px}
+.rawline{display:flex;gap:10px;padding:0 8px;white-space:pre-wrap;align-items:baseline}.rawline.hit{background:var(--hl)}
+.rawno{color:var(--mute);width:34px;text-align:right;flex:none}.rawtxt{flex:1;min-width:0;word-break:break-word}
+.rawhits{color:var(--accent);font-size:11.5px;flex:none;max-width:40%}
